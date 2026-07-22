@@ -15,11 +15,11 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenAuditModal, onOp
       <div className="absolute top-1/4 left-10 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-stretch">
           {/* Left Column: Headline, Copy, Checkpoints, CTAs, Trust Badges */}
-          <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
+          <div className="lg:col-span-7 space-y-6 text-center lg:text-left flex flex-col justify-center">
             {/* Top Pill Badge */}
-            <div className="inline-flex items-center gap-2 bg-[#1A1810] border border-[#4A3D10] rounded-full px-4 py-1.5 shadow-sm">
+            <div className="inline-flex items-center gap-2 bg-[#1A1810] border border-[#4A3D10] rounded-full px-4 py-1.5 shadow-sm w-fit mx-auto lg:mx-0">
               <Zap className="w-3.5 h-3.5 text-[#FFC000] fill-[#FFC000]" />
               <span className="text-xs font-extrabold text-[#FFC000] tracking-wide uppercase">
                 #1 Meta Ads Agency in Dubai
@@ -39,7 +39,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenAuditModal, onOp
               Generate more qualified leads, increase sales, and maximize ROAS with expert Facebook &amp; Instagram advertising strategies tailored for your business.
             </p>
 
-            {/* Feature Checklist (Image 1 style) */}
+            {/* Feature Checklist */}
             <div className="space-y-3 pt-1 max-w-xl mx-auto lg:mx-0 text-left">
               <div className="flex items-center gap-3">
                 <div className="w-5 h-5 rounded-full bg-[#FFC000] text-black flex items-center justify-center shrink-0">
@@ -85,15 +85,11 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenAuditModal, onOp
               >
                 <span>Get Free Meta Ads Audit</span>
               </button>
-
-
             </div>
-
-
           </div>
 
-          {/* Right Column: Hero Audit Form Card */}
-          <div className="lg:col-span-5">
+          {/* Right Column: Hero Audit Form Card Full Height */}
+          <div className="lg:col-span-5 flex flex-col justify-center h-full">
             <HeroAuditFormCard />
           </div>
         </div>

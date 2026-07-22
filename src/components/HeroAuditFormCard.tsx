@@ -43,7 +43,7 @@ export const HeroAuditFormCard: React.FC<HeroAuditFormCardProps> = ({
   };
 
   return (
-    <div className="bg-[#141414] border border-[#2B2B2B] rounded-3xl p-6 sm:p-8 shadow-2xl shadow-black/80 relative overflow-hidden text-white backdrop-blur-xl">
+    <div className="bg-[#141414] border border-[#2B2B2B] rounded-3xl p-6 sm:p-8 shadow-2xl shadow-black/80 relative overflow-hidden text-white backdrop-blur-xl h-full flex flex-col justify-between">
       {/* Background Subtle Yellow/Gold Glow Accent */}
       <div className="absolute -top-24 -right-24 w-60 h-60 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute -bottom-24 -left-24 w-60 h-60 bg-yellow-500/10 rounded-full blur-3xl pointer-events-none" />
