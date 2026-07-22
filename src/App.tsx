@@ -35,7 +35,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#F8FAFC] text-[#111827] font-['Plus_Jakarta_Sans',sans-serif] relative antialiased selection:bg-blue-600 selection:text-white">
+    <div className="min-h-screen bg-[#0A0A0A] text-white font-['Plus_Jakarta_Sans',sans-serif] relative antialiased selection:bg-[#FFC000] selection:text-black w-full overflow-x-hidden">
       {/* Sticky Header */}
       <Navbar
         onOpenAuditModal={() => setAuditModalOpen(true)}
