@@ -40,8 +40,8 @@ export const FloatingElements: React.FC<FloatingElementsProps> = ({ onOpenBookin
         style={{ width: `${scrollProgress}%` }}
       />
 
-      {/* Floating Action Buttons Right Stack (Matching Image 2) */}
-      <div className="fixed bottom-20 sm:bottom-6 right-4 sm:right-6 z-40 flex flex-col items-center gap-3.5">
+      {/* Floating Action Buttons Right Stack (Desktop only, mobile has sticky bottom bar) */}
+      <div className="fixed bottom-6 right-4 sm:right-6 z-40 hidden sm:flex flex-col items-center gap-3.5">
         {/* Optional Back To Top Button */}
         {showBackToTop && (
           <button

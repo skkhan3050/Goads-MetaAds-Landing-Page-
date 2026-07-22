@@ -88,8 +88,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenAuditModal, onOp
             </div>
           </div>
 
-          {/* Right Column: Hero Audit Form Card Full Height */}
-          <div className="lg:col-span-5 flex flex-col justify-center h-full">
+          {/* Right Column: Hero Audit Form Card */}
+          <div className="lg:col-span-5 flex flex-col justify-center h-full w-full max-w-full overflow-hidden">
             <HeroAuditFormCard />
           </div>
         </div>
