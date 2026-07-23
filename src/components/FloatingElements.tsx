@@ -55,14 +55,14 @@ export const FloatingElements: React.FC<FloatingElementsProps> = ({ onOpenBookin
 
 
 
-        {/* 1. Phone Call Floating Button (Warm Coral / Orange Circle) */}
-        <a
-          href="tel:+917439469915"
+        {/* 1. Phone Call Floating Button */}
+        <button
+          onClick={onOpenBookingModal}
           className="w-13 h-13 rounded-full bg-[#E85D35] hover:bg-[#d44e27] text-white shadow-2xl flex items-center justify-center transition-all hover:scale-110 active:scale-95 group cursor-pointer border-2 border-white/20"
-          aria-label="Call Us Directly"
+          aria-label="Book Call"
         >
           <Phone className="w-6 h-6 text-white stroke-[2.5]" />
-        </a>
+        </button>
 
         {/* 2. WhatsApp Floating Button (Official Green Circle) */}
         <a
@@ -81,13 +81,13 @@ export const FloatingElements: React.FC<FloatingElementsProps> = ({ onOpenBookin
       {/* Sticky Bottom Mobile CTA Bar */}
       <div className="fixed bottom-0 inset-x-0 bg-[#050505]/95 backdrop-blur-md border-t border-[#1F1F1F] p-2.5 z-40 lg:hidden shadow-2xl">
         <div className="grid grid-cols-3 gap-2 text-center text-xs font-bold">
-          <a
-            href="tel:+917439469915"
-            className="flex flex-col items-center justify-center py-2 bg-[#E85D35] text-white rounded-xl active:scale-95 transition-all shadow-sm"
+          <button
+            onClick={onOpenBookingModal}
+            className="flex flex-col items-center justify-center py-2 bg-[#E85D35] text-white rounded-xl active:scale-95 transition-all shadow-sm cursor-pointer"
           >
             <Phone className="w-4 h-4 text-white mb-0.5" />
             <span>Call Now</span>
-          </a>
+          </button>
 
           <a
             href="https://wa.me/917439469915?text=Hi%20GoAdsLive,%20I'd%20like%20to%20scale%20my%20Meta%20Ads!"

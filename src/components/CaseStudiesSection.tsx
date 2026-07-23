@@ -147,13 +147,13 @@ export const CaseStudiesSection: React.FC<CaseStudiesSectionProps> = ({ onOpenBo
               </ResponsiveContainer>
             </div>
 
-            <a
-              href="tel:+917439469915"
+            <button
+              onClick={onOpenBookingModal}
               className="w-full text-xs font-extrabold text-black bg-[#FFC000] hover:bg-[#e6ad00] py-3.5 rounded-xl shadow-md flex items-center justify-center gap-2 transition-all cursor-pointer"
             >
               <span>Replicate This Strategy For Your Business</span>
               <ArrowRight className="w-4 h-4 text-black" />
-            </a>
+            </button>
           </div>
 
         </div>

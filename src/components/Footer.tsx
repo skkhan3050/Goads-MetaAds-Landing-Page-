@@ -113,9 +113,9 @@ export const Footer: React.FC<FooterProps> = () => {
                 <Phone className="w-4 h-4 text-black fill-black" />
               </div>
               <div className="text-xs sm:text-sm text-neutral-200 font-bold pt-1.5">
-                <a href="tel:+917439469915" className="hover:text-[#FFC000] transition-colors">
+                <button onClick={onOpenBookingModal} className="hover:text-[#FFC000] transition-colors cursor-pointer">
                   +91-07439469915
-                </a>
+                </button>
               </div>
             </div>
 

@@ -71,13 +71,13 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenAuditModal, onOp
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-3">
-              <a
-                href="tel:+917439469915"
+              <button
+                onClick={onOpenBookingModal}
                 className="w-full sm:w-auto text-base font-extrabold text-black bg-[#FFC000] hover:bg-[#e6ad00] px-8 py-4 rounded-full shadow-xl shadow-amber-500/20 transition-all transform hover:-translate-y-0.5 flex items-center justify-center gap-3 cursor-pointer"
               >
                 <span>Book Strategy Call</span>
                 <ArrowRight className="w-5 h-5 text-black" />
-              </a>
+              </button>
 
               <button
                 onClick={onOpenAuditModal}
