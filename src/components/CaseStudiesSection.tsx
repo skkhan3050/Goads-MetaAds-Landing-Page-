@@ -92,22 +92,22 @@ export const CaseStudiesSection: React.FC<CaseStudiesSectionProps> = ({ onOpenBo
               </div>
             </div>
 
-            {/* Real Meta Ads Manager Proof Screenshot (Replaces Image 1 text boxes) */}
-            <div className="relative rounded-2xl overflow-hidden border border-[#2B2B2B] bg-[#050505] shadow-2xl group">
+            {/* Real Meta Ads Manager Proof Screenshot */}
+            <div className="relative rounded-2xl overflow-hidden border border-[#2B2B2B] bg-[#050505] shadow-2xl group aspect-[16/9] max-h-[380px] w-full flex items-center justify-center p-2">
               <img
                 src={
                   activeCase.id === 'real-estate-dubai'
-                    ? '/assets/meta_ads_dashboard_2.png'
-                    : activeCase.id === 'healthcare-dubai'
                     ? '/assets/meta_ads_dashboard_1.png'
-                    : '/assets/meta_ads_dashboard_3.png'
+                    : activeCase.id === 'healthcare-dubai'
+                    ? '/assets/meta_ads_dashboard_3.png'
+                    : '/assets/meta_ads_dashboard_2.png'
                 }
                 alt={`${activeCase.industry} Meta Ads Manager Live Proof`}
-                className="w-full h-auto object-contain rounded-2xl transition-transform duration-300 group-hover:scale-[1.01]"
+                className="w-full h-full object-contain rounded-xl transition-transform duration-300 group-hover:scale-[1.02]"
               />
 
               {/* Watermark Verification Badge */}
-              <div className="absolute bottom-3 right-3 bg-black/80 backdrop-blur-md text-white text-[11px] font-extrabold px-3 py-1.5 rounded-full border border-white/20 flex items-center gap-1.5 shadow-lg">
+              <div className="absolute bottom-3 right-3 bg-black/85 backdrop-blur-md text-white text-[11px] font-extrabold px-3 py-1.5 rounded-full border border-white/20 flex items-center gap-1.5 shadow-lg">
                 <ShieldCheck className="w-3.5 h-3.5 text-[#FFC000]" />
                 <span>Meta Business Manager Verified</span>
               </div>
