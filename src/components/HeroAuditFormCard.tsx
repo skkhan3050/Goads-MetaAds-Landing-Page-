@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import confetti from 'canvas-confetti';
-import { CheckCircle2, Lock, ArrowRight } from 'lucide-react';
+import { CheckCircle2, Lock, ArrowRight, X } from 'lucide-react';
 
 interface HeroAuditFormCardProps {
   onSubmittedSuccess?: () => void;
@@ -50,11 +50,16 @@ export const HeroAuditFormCard: React.FC<HeroAuditFormCardProps> = ({
 
       {isModal && onCloseModal && (
         <button
-          onClick={onCloseModal}
-          className="absolute top-4 right-4 p-2 text-neutral-400 hover:text-white bg-[#242424] hover:bg-[#333333] rounded-full transition-all"
+          type="button"
+          onClick={(e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            onCloseModal();
+          }}
+          className="absolute top-3.5 right-3.5 sm:top-4 sm:right-4 z-50 w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-[#242424] hover:bg-[#333333] active:bg-[#3D3D3D] text-neutral-300 hover:text-white flex items-center justify-center transition-all border border-[#383838] shadow-lg cursor-pointer active:scale-95 touch-manipulation"
           aria-label="Close Modal"
         >
-          ✕
+          <X className="w-5 h-5 stroke-[2.5]" />
         </button>
       )}
 
