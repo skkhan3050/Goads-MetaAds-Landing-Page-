@@ -9,7 +9,6 @@ import { ServicesSection } from './components/ServicesSection';
 import { WhyChooseUs } from './components/WhyChooseUs';
 import { ResultsCounters } from './components/ResultsCounters';
 import { CaseStudiesSection } from './components/CaseStudiesSection';
-import { TestimonialsSection } from './components/TestimonialsSection';
 import { ProcessTimeline } from './components/ProcessTimeline';
 import { PricingSection } from './components/PricingSection';
 import { LeadFormSection } from './components/LeadFormSection';
@@ -66,9 +65,6 @@ export default function App() {
 
         {/* Dubai Case Studies with Recharts */}
         <CaseStudiesSection onOpenBookingModal={handleMakeCall} />
-
-        {/* Testimonials */}
-        <TestimonialsSection />
 
         {/* Lead Generation Form Section */}
         <LeadFormSection />
