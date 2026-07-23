@@ -31,7 +31,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenAuditModal, onOp
             {/* Main Headline */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.15]">
               Scale Your Business with High-Converting{' '}
-              <span className="text-[#FFC000]">Meta Ads in Dubai</span>
+              <span className="text-[#FFC000]">Meta Ads in Dubai (UAE)</span>
             </h1>
 
             {/* Subheadline */}
