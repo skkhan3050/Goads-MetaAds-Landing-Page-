@@ -12,7 +12,6 @@ import { CaseStudiesSection } from './components/CaseStudiesSection';
 import { TestimonialsSection } from './components/TestimonialsSection';
 import { ProcessTimeline } from './components/ProcessTimeline';
 import { PricingSection } from './components/PricingSection';
-import { FaqSection } from './components/FaqSection';
 import { LeadFormSection } from './components/LeadFormSection';
 import { FloatingElements } from './components/FloatingElements';
 import { AuditModal } from './components/AuditModal';
@@ -70,13 +69,6 @@ export default function App() {
 
         {/* Testimonials */}
         <TestimonialsSection />
-
-
-
-
-
-        {/* FAQ Accordion */}
-        <FaqSection />
 
         {/* Lead Generation Form Section */}
         <LeadFormSection />
