@@ -126,8 +126,8 @@ export const CaseStudiesSection: React.FC<CaseStudiesSectionProps> = ({ onOpenBo
               </span>
             </div>
 
-            <div className="h-64 w-full">
-              <ResponsiveContainer width="100%" height="100%">
+            <div className="h-64 w-full min-h-[256px]">
+              <ResponsiveContainer width="100%" height="100%" minWidth={200} minHeight={200}>
                 <BarChart data={activeCase.chartData} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
                   <XAxis dataKey="month" stroke="#9ca3af" fontSize={11} tickLine={false} />
                   <YAxis stroke="#9ca3af" fontSize={11} tickLine={false} />
