@@ -141,30 +141,7 @@ export const HeroAuditFormCard: React.FC<HeroAuditFormCardProps> = ({
               </div>
             </div>
 
-            {/* Monthly Ad Spend Dropdown */}
-            <div>
-              <label className="block text-xs sm:text-sm font-extrabold text-white mb-1.5">
-                Monthly Ad Spend
-              </label>
-              <select
-                value={monthlyBudget}
-                onChange={(e) => setMonthlyBudget(e.target.value)}
-                className="w-full bg-[#242424] border border-[#383838] text-white font-bold rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#FFC000] focus:ring-1 focus:ring-[#FFC000] transition-all appearance-none cursor-pointer"
-              >
-                <option value="AED 5,000 - AED 10,000 / mo" className="bg-[#141414] text-white font-semibold">
-                  AED 5,000 - AED 10,000 / mo
-                </option>
-                <option value="AED 10,000 - AED 25,000 / mo" className="bg-[#141414] text-white font-semibold">
-                  AED 10,000 - AED 25,000 / mo
-                </option>
-                <option value="AED 25,000 - AED 50,000 / mo" className="bg-[#141414] text-white font-semibold">
-                  AED 25,000 - AED 50,000 / mo
-                </option>
-                <option value="AED 50,000+ / mo" className="bg-[#141414] text-white font-semibold">
-                  AED 50,000+ / mo (Scale)
-                </option>
-              </select>
-            </div>
+
 
             {/* Website URL */}
             <div>
