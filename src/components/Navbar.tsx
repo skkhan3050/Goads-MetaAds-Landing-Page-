@@ -49,8 +49,13 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenAuditModal, onOpenBookingM
             <span className="hidden md:inline-flex items-center gap-1">
               <CheckCircle2 className="w-3 h-3 text-emerald-400" /> 2 New Client Slots Open for Q3
             </span>
-            <a href="tel:+97140000000" className="hover:text-[#FFC000] transition-colors flex items-center gap-1 font-medium text-neutral-300">
-              <Phone className="w-3 h-3 text-[#FFC000]" /> +971 4 123 4567
+            <a
+              href="https://wa.me/917439469915?text=Hi%20GoAdsLive,%20I'd%20like%20to%20scale%20my%20Meta%20Ads!"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#FFC000] transition-colors flex items-center gap-1 font-medium text-neutral-300"
+            >
+              <Phone className="w-3 h-3 text-[#FFC000]" /> +917439469915
             </a>
           </div>
         </div>
