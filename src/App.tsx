@@ -28,7 +28,7 @@ export default function App() {
   }, []);
 
   const handleMakeCall = () => {
-    setAuditModalOpen(true);
+    window.location.href = 'tel:+917439469915';
   };
 
   return (

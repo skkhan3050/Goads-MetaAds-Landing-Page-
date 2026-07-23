@@ -49,9 +49,9 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenAuditModal, onOpenBookingM
             <span className="hidden md:inline-flex items-center gap-1">
               <CheckCircle2 className="w-3 h-3 text-emerald-400" /> 2 New Client Slots Open for Q3
             </span>
-            <button onClick={onOpenBookingModal} className="hover:text-[#FFC000] transition-colors flex items-center gap-1 font-medium text-neutral-300 cursor-pointer">
+            <a href="tel:+97140000000" className="hover:text-[#FFC000] transition-colors flex items-center gap-1 font-medium text-neutral-300">
               <Phone className="w-3 h-3 text-[#FFC000]" /> +971 4 123 4567
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -83,7 +83,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenAuditModal, onOpenBookingM
 
           {/* Desktop Actions */}
           <div className="hidden lg:flex items-center gap-3">
-            {/* 1. WHATSAPP Green Border Button */}
+            {/* 1. WHATSAPP Green Border Button (Matching Image 1) */}
             <a
               href="https://wa.me/917439469915?text=Hi%20GoAdsLive,%20I'd%20like%20to%20scale%20my%20Meta%20Ads!"
               target="_blank"
@@ -103,23 +103,23 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenAuditModal, onOpenBookingM
             >
               Free Meta Ads Audit
             </button>
-            <button
-              onClick={onOpenBookingModal}
+            <a
+              href="tel:+917439469915"
               className="text-xs font-extrabold text-black bg-[#FFC000] hover:bg-[#e6ad00] px-5 py-2.5 rounded-full shadow-md shadow-amber-500/20 transition-all hover:scale-[1.02] flex items-center gap-1.5 cursor-pointer"
             >
               Book Strategy Call
               <ArrowRight className="w-3.5 h-3.5 text-black" />
-            </button>
+            </a>
           </div>
 
           {/* Mobile Menu Toggle Button */}
           <div className="lg:hidden flex items-center gap-2">
-            <button
-              onClick={onOpenBookingModal}
-              className="text-xs font-extrabold text-black bg-[#FFC000] px-3 py-2 rounded-lg cursor-pointer"
+            <a
+              href="tel:+917439469915"
+              className="text-xs font-extrabold text-black bg-[#FFC000] px-3 py-2 rounded-lg"
             >
               Book Call
-            </button>
+            </a>
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="p-2 text-neutral-300 hover:text-white rounded-lg border border-[#333333] bg-[#1A1A1A]"
